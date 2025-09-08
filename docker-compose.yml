@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: akaki_church_db
+    environment:
+      POSTGRES_DB: akaki_church
+      POSTGRES_USER: church_admin
+      POSTGRES_PASSWORD: church_password_2024
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./server/database/init.sql:/docker-entrypoint-initdb.d/01-init.sql
+      - ./server/database/dummy-data.sql:/docker-entrypoint-initdb.d/02-dummy-data.sql
+
+  server:
+    build: ./server
+    container_name: akaki_church_server
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=development
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_NAME=akaki_church
+      - DB_USER=church_admin
+      - DB_PASSWORD=church_password_2024
+    depends_on:
+      - postgres
+    volumes:
+      - ./server:/app
+      - /app/node_modules
+
+  client:
+    build: ./client
+    container_name: akaki_church_client
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=http://localhost:5000
+    volumes:
+      - ./client:/app
+      - /app/node_modules
+    depends_on:
+      - server
+
+volumes:
+  postgres_data:

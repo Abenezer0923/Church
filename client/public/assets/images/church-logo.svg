@@ -1,0 +1,27 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer circle -->
+  <circle cx="100" cy="100" r="95" fill="white" stroke="#1e5ba8" stroke-width="6"/>
+  
+  <!-- Dove - more accurate to your image -->
+  <path d="M45 65 Q35 50 45 45 Q55 40 70 45 Q80 50 85 60 Q85 65 80 70 Q75 75 65 75 Q55 75 50 70 Q40 65 45 65 Z" 
+        fill="none" stroke="#1e5ba8" stroke-width="4"/>
+  <!-- Dove wing detail -->
+  <path d="M50 60 Q60 55 70 60" fill="none" stroke="#1e5ba8" stroke-width="2"/>
+  <!-- Dove eye -->
+  <circle cx="60" cy="55" r="2" fill="#1e5ba8"/>
+  
+  <!-- Open book - more accurate proportions -->
+  <path d="M35 130 Q100 120 165 130 L165 170 Q100 160 35 170 Z" 
+        fill="none" stroke="#1e5ba8" stroke-width="4"/>
+  <!-- Book spine -->
+  <line x1="100" y1="125" x2="100" y2="175" stroke="#1e5ba8" stroke-width="3"/>
+  <!-- Book pages -->
+  <path d="M45 140 Q85 135 95 140" fill="none" stroke="#1e5ba8" stroke-width="2"/>
+  <path d="M105 140 Q145 135 155 140" fill="none" stroke="#1e5ba8" stroke-width="2"/>
+  <path d="M45 150 Q85 145 95 150" fill="none" stroke="#1e5ba8" stroke-width="2"/>
+  <path d="M105 150 Q145 145 155 150" fill="none" stroke="#1e5ba8" stroke-width="2"/>
+  
+  <!-- Cross - matching your pink/red color -->
+  <rect x="93" y="25" width="14" height="90" fill="#c53f7d" rx="3"/>
+  <rect x="70" y="48" width="60" height="14" fill="#c53f7d" rx="3"/>
+</svg>
