@@ -19,11 +19,15 @@
     "lucide-react": "^0.294.0",
     "date-fns": "^2.30.0",
     "chart.js": "^4.4.0",
-    "react-chartjs-2": "^5.2.0"
+    "react-chartjs-2": "^5.2.0",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+  },
+  "devDependencies": {
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "CI=false GENERATE_SOURCEMAP=false react-scripts build",
+    "build": "CI=false GENERATE_SOURCEMAP=false node ./node_modules/.bin/react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
