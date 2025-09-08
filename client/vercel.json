@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "buildCommand": "CI=false npm install --legacy-peer-deps && CI=false npm run build",
-  "installCommand": "CI=false npm install --legacy-peer-deps",
+  "buildCommand": "npm install react-scripts@5.0.1 --save-exact && npm install && npm run build",
+  "installCommand": "npm install react-scripts@5.0.1 --save-exact",
   "framework": "create-react-app",
   "outputDirectory": "build",
   "routes": [
