@@ -21,17 +21,6 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ]
-} 2,
-  "framework": "create-react-app",
-  "buildCommand": "npm install && npm run build",
-  "outputDirectory": "build",
-  "routes": [
-    {
-      "src": "/[^.]+",
-      "dest": "/",
-      "status": 200
-    }
   ],
   "github": {
     "silent": true
