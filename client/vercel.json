@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "buildCommand": "npm install --legacy-peer-deps --force && npm run build",
-  "installCommand": "npm install --legacy-peer-deps --force",
+  "buildCommand": "CI=false npm install --legacy-peer-deps && CI=false npm run build",
+  "installCommand": "CI=false npm install --legacy-peer-deps",
   "framework": "create-react-app",
   "outputDirectory": "build",
   "routes": [
