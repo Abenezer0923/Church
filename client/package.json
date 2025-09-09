@@ -6,6 +6,7 @@
     "node": "18.17.1"
   },
   "dependencies": {
+    "express": "4.18.2",
     "@testing-library/jest-dom": "5.17.0",
     "@testing-library/react": "13.4.0",
     "@testing-library/user-event": "14.5.2",
@@ -29,7 +30,8 @@
   },
 
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js",
+    "dev": "react-scripts start",
     "build": "export NODE_OPTIONS=--openssl-legacy-provider && CI=false GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -43,6 +45,9 @@
       "react-app",
       "react-app/jest"
     ]
+  },
+  "renderConfig": {
+    "startCommand": "npm run build && npm start"
   },
   "browserslist": {
     "production": [
