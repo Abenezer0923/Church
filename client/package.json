@@ -24,8 +24,12 @@
     "@babel/core": "7.22.5",
     "@babel/plugin-transform-react-jsx": "7.22.5",
     "@babel/runtime": "7.22.5",
-    "typescript": "5.1.3",
-    "react-scripts": "5.0.1"
+    "typescript": "4.9.5",
+    "react-scripts": "5.0.1",
+    "ajv": "6.12.6",
+    "ajv-keywords": "3.5.2",
+    "schema-utils": "3.1.2",
+    "webpack": "4.46.0"
   },
 
   "scripts": {
@@ -39,7 +43,8 @@
     "ajv-keywords": "3.5.2",
     "schema-utils": "3.1.2",
     "@babel/core": "7.22.5",
-    "typescript": "5.1.3"
+    "typescript": "4.9.5",
+    "webpack": "4.46.0"
   },
   "eslintConfig": {
     "extends": [
@@ -48,12 +53,11 @@
     ]
   },
   "overrides": {
-    "webpack": {
-      "ajv": "6.12.6",
-      "ajv-keywords": "3.5.2",
-      "schema-utils": "3.1.2"
-    },
-    "typescript": "5.1.3"
+    "ajv": "6.12.6",
+    "ajv-keywords": "3.5.2",
+    "schema-utils": "3.1.2",
+    "typescript": "4.9.5",
+    "webpack": "4.46.0"
   },
   "browserslist": {
     "production": [
