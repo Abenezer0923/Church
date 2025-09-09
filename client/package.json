@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "engines": {
-    "node": "16.x"
+    "node": "18.17.1"
   },
   "dependencies": {
     "@testing-library/jest-dom": "5.17.0",
@@ -30,7 +30,7 @@
 
   "scripts": {
     "start": "react-scripts start",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && CI=false GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
